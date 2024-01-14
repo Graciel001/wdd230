@@ -1,0 +1,86 @@
+:root {
+    --brand-primary: #2c3e50;
+    --brand-secondary: #000;
+    --primecolor-contrast: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
+p,a,span,li {
+    font-family: "Open Sans";
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: var(--brand-primary);
+    padding: 5%;
+}
+header .img-container {
+    width: 50px;
+}
+header .img-container img{
+    width: 100%;
+}
+header h1 {
+    color: var(--primecolor-contrast);
+    font-size: 18px;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: var(--brand-secondary);
+    padding: 5%;
+}
+nav a {
+    display: flex;
+    justify-content: center;
+    color: var(--primecolor-contrast);
+    padding: 5px 0px;
+    text-decoration: none;
+}
+.main-title{
+    border-bottom: 1px solid gray;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Montserrat";
+    padding-bottom: 3%;
+}
+.card {
+    border: 1px solid var(--brand-secondary);
+    border-radius: 5px;
+    margin: 3%;
+}
+.card h3 {
+    background: #2c3e50;
+    padding: 3%;
+    color: var(--primecolor-contrast);
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+}
+.card p {
+    text-align: center;
+}
+.card ul {
+    list-style: none;
+    margin: 0;
+    padding: 5%;
+}
+.card ul li a{
+    text-decoration: none;
+    color: var(--brand-secondary);
+}
+
+footer {
+    text-align: center;
+    background: var(--brand-primary);
+    padding: 5%;
+}
+footer p {
+    color: var(--primecolor-contrast);
+    font-size: 15px;
+}
