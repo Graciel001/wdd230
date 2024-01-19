@@ -1,6 +1,8 @@
+/*--brand-primary: #2c3e50;
+--brand-secondary: #131313;*/
 :root {
-    --brand-primary: #2c3e50;
-    --brand-secondary: #131313;
+    --brand-primary: #005083;
+    --brand-secondary: #1f1f1f;
     --primecolor-contrast: #fff;
 }
 
