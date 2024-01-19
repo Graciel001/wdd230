@@ -3,6 +3,7 @@
 :root {
     --brand-primary: #005083;
     --brand-secondary: #000;
+    --brand-thirdary: #0392ff;
     --primecolor-contrast: #fff;
 }
 
@@ -37,8 +38,6 @@ nav {
     background-color: var(--brand-secondary);
 }
 nav a {
-    display: flex;
-    justify-content: center;
     color: var(--primecolor-contrast);
     padding: 5%;
     text-decoration: none;

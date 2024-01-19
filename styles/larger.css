@@ -1,14 +1,15 @@
 :root {
     --brand-primary: #005083;
     --brand-secondary: #000;
+    --brand-thirdary: #0392ff;
     --primecolor-contrast: #fff;
 }
 @media screen and (min-width: 768px) {
     nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    nav a {
-        background-color: var(--brand-primary)
+    nav a:hover {
+        background-color: var(--brand-thirdary);
     }
 }
