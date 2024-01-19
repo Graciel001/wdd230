@@ -1,0 +1,14 @@
+:root {
+    --brand-primary: #005083;
+    --brand-secondary: #000;
+    --primecolor-contrast: #fff;
+}
+@media screen and (min-width: 768px) {
+    .nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav a {
+        background-color: var(--brand-primary)
+    }
+}
