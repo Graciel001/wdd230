@@ -1,0 +1,64 @@
+body {
+    font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+marquee {
+    padding: 1rem;
+    background-color: #eee;
+}
+
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las columnas */
+}
+
+h2 {
+    color: navy;
+    text-align: left;
+    grid-column: span 2; /* Hace que el título abarque ambas columnas */
+}
+
+article {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 20px; /* Agregamos un espacio entre las secciones (article y list) */
+}
+
+.callout {
+    color: #fff;
+    background-color: #702963;
+    padding: 25px;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left;
+}
+
+.banner {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
