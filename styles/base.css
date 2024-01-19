@@ -51,6 +51,8 @@ nav a {
     padding-bottom: 3%;
 }
 .card {
+    display: grid;
+    gap: 20px;
     border: 1px solid var(--brand-secondary);
     border-radius: 5px;
     margin: 3%;
