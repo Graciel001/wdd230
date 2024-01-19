@@ -50,7 +50,7 @@ nav a {
     font-family: "Montserrat";
     padding-bottom: 3%;
 }
-main{
+.card-container{
     display: grid;
     gap: 20px;
 }
