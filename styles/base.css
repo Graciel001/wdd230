@@ -50,9 +50,11 @@ nav a {
     font-family: "Montserrat";
     padding-bottom: 3%;
 }
-.card {
+main{
     display: grid;
     gap: 20px;
+}
+.card {
     border: 1px solid var(--brand-secondary);
     border-radius: 5px;
     margin: 3%;
