@@ -1,5 +1,8 @@
 /*--brand-primary: #2c3e50;
 --brand-secondary: #131313;*/
+.row {
+    margin: 0 auto;
+}
 :root {
     --brand-primary: #005083;
     --brand-secondary: #000;
