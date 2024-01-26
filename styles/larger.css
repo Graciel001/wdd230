@@ -5,6 +5,14 @@
     --primecolor-contrast: #fff;
 }
 @media screen and (min-width: 768px) {
+    .row {
+        width: 750px;
+    }
+
+    .map-container iframe {
+        width: 750px;
+    }
+    
     header {
         display: flex;
         justify-content: center;
@@ -40,6 +48,13 @@
     }
 }
 @media screen and (min-width: 992px) {
+    .row {
+        width: 950px;
+    }
+
+    .map-container iframe {
+        width: 950px;
+    }
     .card-container{
         grid-template-columns: 1fr 1fr;
     }
@@ -52,7 +67,34 @@
 }
 
 @media screen and (min-width: 1200px){
+    .row {
+        width: 1150px;
+    }
+
+    .map-container iframe {
+        width: 1150px;
+    }
     .map-container iframe {
         height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    .row {
+        width: 1350px;
+    }
+
+    .map-container iframe {
+        width: 1350px;
+    }
+}
+
+@media only screen and (min-width: 1530px) {
+    .row {
+        width: 1500px;
+    }
+
+    .map-container iframe {
+        width: 1500px;
     }
 }
