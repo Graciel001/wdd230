@@ -13,6 +13,10 @@
         width: 750px;
     }
 
+    .map-container{
+        padding: 5% 0%;
+    }
+
     .map-container iframe {
         width: 750px;
     }
