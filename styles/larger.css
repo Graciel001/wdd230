@@ -25,6 +25,15 @@
     nav a:hover {
         background-color: var(--brand-thirdary);
     }
+    
+    .map-container {
+        height: initial;
+    }
+
+    .map-container iframe {
+        height: 270px;
+    }
+
     footer {
         display: flex;
         justify-content: space-around;
@@ -39,5 +48,11 @@
     }
     header h1 {
         font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .map-container iframe {
+        height: 500px;
     }
 }

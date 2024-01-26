@@ -32,20 +32,43 @@ header .img-container img{
 }
 header h1 {
     color: var(--primecolor-contrast);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 nav {
-    display: grid;
+    display: none;
     grid-template-rows: repeat(4, 1fr);
     background-color: var(--brand-secondary);
     text-align: center;
+}
+nav.open{
+    display: grid;
 }
 nav a {
     color: var(--primecolor-contrast);
     padding: 5%;
     text-decoration: none;
 }
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--primecolor-contrast);
+    position: absolute;
+    top: 1.8rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
 .main-title{
     border-bottom: 1px solid gray;
     text-align: center;
@@ -85,6 +108,14 @@ nav a {
     text-decoration: none;
     color: var(--brand-secondary);
 }
+.map-container{
+    padding: 5% 3%;
+    height: 270px;
+}
+.map-container iframe {
+    width: 100%;
+    height: 270px;
+}
 
 footer {
     text-align: center;
@@ -101,10 +132,17 @@ footer p {
     .row {
         width: 750px;
     }
+    .map-container iframe {
+        width: 750px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .row {
+        width: 950px;
+    }
+
+    .map-container iframe {
         width: 950px;
     }
 }
@@ -112,14 +150,26 @@ footer p {
     .row {
         width: 1150px;
     }
+
+    .map-container iframe {
+        width: 1150px;
+    }
 }
 @media only screen and (min-width: 1360px) {
     .row {
         width: 1350px;
     }
+
+    .map-container iframe {
+        width: 1350px;
+    }
 }
 @media only screen and (min-width: 1530px) {
     .row {
+        width: 1500px;
+    }
+
+    .map-container iframe {
         width: 1500px;
     }
 }
