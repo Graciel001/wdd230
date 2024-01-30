@@ -1,0 +1,24 @@
+@media screen and (min-width: 768px) {
+    .row {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 992px) {
+    .row {
+        width: 950px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .row {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1530px) {
+    .row {
+        width: 1500px;
+        margin: 0 auto;
+    }
+}
