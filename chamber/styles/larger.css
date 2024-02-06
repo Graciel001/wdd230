@@ -1,0 +1,18 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .hero-shot .container .line-1{
+        font-size: 70px;
+    }
+    .hero-shot .container .line-2{
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 1530px) {
+    .container {
+        width: 1500px;
+        margin: 0 auto;
+    }
+}

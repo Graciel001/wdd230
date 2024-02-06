@@ -1,0 +1,239 @@
+/* VARIABLES */
+:root {
+    --brand-primary: #f1b85b;
+    --brand-secondary: #322e29;
+    --support-color: #275657;
+    --primecolor-contrast: #fff;
+    --min-px: 320;
+    --max-px: 1920;
+    --min-vw: 320;
+    --max-vw: 766;
+}
+
+/* CSS GENERAL */
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat";
+}
+p,a,span,li{
+    font-family: "Open Sans";
+}
+
+header {
+    background-color: var(--brand-primary);
+}
+
+header .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 15px;
+}
+
+header .container .logo a img {
+    width: 100%;
+}
+
+header .container .logo {
+    width: 100px;
+}
+
+header .container .logo a:hover {
+    opacity: .8;
+}
+
+header .container .social-media ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .container .social-media ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    background: var(--brand-secondary);
+    border-radius: 100%;
+    text-decoration: none;
+    transition: .3s;
+}
+
+header .container .social-media ul li a:hover {
+    background-color: var(--support-color);
+}
+
+header .container .social-media ul li a .fa-brands {
+    color: var(--primecolor-contrast);
+}
+.navbar-container {
+    width: 100%;
+}
+
+header .navbar-container nav a {
+    color: var(--brand-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+    margin: 0px 10px;
+    position: relative;
+    color: var(--primecolor-contrast);
+}
+
+.navbar-container nav {
+    display: none;
+}
+
+.navbar-container nav.open{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: var(--brand-secondary);
+    margin-top: 5%;
+    padding: 5%;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--brand-secondary);
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+/* MAIN */
+
+/* HERO SHOT VIDEO */
+
+.hero-shot {
+    position: relative;
+    padding: calc(var(--min-px)px + (var(--max-px) - var(--min-px)) * ((100vw - var(--min-vw)px) / (var(--max-vw) - var(--min-vw)))) 0;
+}
+
+.hero-shot::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-shot .heroVid {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    background: url("//published-assets.ari-build.com/Content/Published/Site/25450/images/hero-VidBg.JPG");
+    background-size: cover;
+}
+
+.hero-shot .hero-video, .hero-shot .hero-video .embed-responsive, .hero-shot .hero-video iframe {
+    width: 100%;
+}
+
+.hero-shot .hero-video .embed-responsive {
+    position: relative;
+    z-index: -1;
+}
+
+.hero-shot .hero-video .embed-responsive iframe {
+    height: 100vh;
+}
+
+.hero-shot .hero-shot #ytplayer {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.hero-shot .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+}
+.hero-shot .container .line-1{
+    display: block;
+    color: var(--primecolor-contrast);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Montserrat";
+    letter-spacing: 0.05em;
+}
+.hero-shot .container .line-2{
+    display: block;
+    color: var(--primecolor-contrast);
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+
+/* CTAS */
+.ctas {
+    padding: 10% 0%;
+}
+
+.ctas .container{
+    display: grid;
+    gap: 20px;
+}
+
+.cta-1, .cta-2, .cta-3 {
+    grid-column: span 3;
+}
+
+.ctas .container a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.ctas .container a:hover {
+    opacity: .5;
+}
+
+.ctas .container a:hover span {
+    letter-spacing: 0.3em;
+}
+
+.ctas .container a img {
+    width: 100%;
+}
+
+.ctas .container a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0%;
+    z-index: 1;
+    color: var(--primecolor-contrast);
+    background-color: var(--support-color);
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: .3s;
+}
