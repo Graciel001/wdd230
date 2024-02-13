@@ -54,10 +54,46 @@
         display: flex;
         justify-content: space-around;
     }
+    .slider-section {
+        padding: 5% 0%;
+    }
+    .slider-section .title h3 {
+        font-size: 50px;
+    }
+    .welcome{
+        padding: 5% 0%;
+    }
+    .welcome h1 {
+        font-size: 40px;
+    }
+    .welcome p {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 5% 0%;
+    }
+
+    footer .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media screen and (min-width: 992px) {
     .container {
         width: 950px;
         margin: 0 auto;
+    }
+    .slider-section .title h3 {
+        font-size: 60px;
+    }
+    .slider-section .carousel-container{
+        height: 750px;
+    }
+    .welcome .container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    footer h3 {
+        font-size: 35px;
     }
 }

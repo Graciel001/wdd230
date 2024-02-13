@@ -8,60 +8,61 @@ hamButton.addEventListener('click', () =>{
 });
 
 
-// HERO SHOT VIDEO
-// Load the IFrame Player API code asynchronously.
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+//CAROUSEL
 
-// Replace the 'ytplayer' element with an iframe and
-// YouTube player after the API code downloads.
-var player;
-var videoId = "3dG_lrGpunQ";
+let slideIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide img');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
-function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer', {
-        playerVars: {
-            enablejsapi: 1,
-            autoplay: 1,
-            autohide: 1,
-            wmode: 'transparent',
-            iv_load_policy: 3,
-            branding: 0,
-            fs: 0,
-            controls: 0,
-            mute: 1,
-            modestbranding: 1,
-            loop: 1,
-            rel: 0,
-            showinfo: 0,
-            playlist: videoId
-        },
-        videoId: videoId,
-        events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}
-
-function onPlayerReady(event) {
-    event.target.playVideo();
-}
-
-function onPlayerStateChange(el) {
-    var ytplayer = document.getElementById('ytplayer');
-
-    if (el.data === 0) {
-        ytplayer.style.opacity = "0";
+function showSlides() {
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
     }
-    if (el.data === 1) {
-        ytplayer.style.opacity = "1";
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
     }
+    slides[slideIndex].style.display = 'block';
 }
 
-var fullScreenAvailable = document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled;
+function nextSlide() {
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[slideIndex].style.display = 'block';
+}
 
-// Assuming YTPlayer is defined elsewhere
-YTPlayer.opt.realfullscreen = isIframe() || !fullScreenAvailable ? false : YTPlayer.opt.realfullscreen;
+function prevSlide() {
+    slideIndex--;
+    if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[slideIndex].style.display = 'block';
+}
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+setInterval(showSlides, 4000); 
+
+
+// DARK MODE
+
+const darkModeToggle = document.getElementById('dark-mode-toggle-checkbox');
+const body = document.body;
+
+darkModeToggle.addEventListener('change', () => {
+    if (darkModeToggle.checked) {
+        body.classList.add('dark-mode');
+    } else {
+        body.classList.remove('dark-mode');
+    }
+});

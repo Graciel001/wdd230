@@ -18,6 +18,11 @@ p,a,span,li{
     font-family: "Open Sans";
 }
 
+.container{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
 header {
     background-color: var(--brand-primary);
 }
@@ -119,62 +124,13 @@ header .navbar-container nav a {
 
 .hero-shot {
     position: relative;
-    padding: calc(var(--min-px)px + (var(--max-px) - var(--min-px)) * ((100vw - var(--min-vw)px) / (var(--max-vw) - var(--min-vw)))) 0;
-}
-
-.hero-shot::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.hero-shot .heroVid {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    padding: 0;
-    z-index: -1;
-    background: url("//published-assets.ari-build.com/Content/Published/Site/25450/images/hero-VidBg.JPG");
+    padding: 12% 0%;
+    background-image: url("../images/hero-shot-sunshine-valley.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.hero-shot .hero-video, .hero-shot .hero-video .embed-responsive, .hero-shot .hero-video iframe {
-    width: 100%;
-}
-
-.hero-shot .hero-video .embed-responsive {
-    position: relative;
-    z-index: -1;
-}
-
-.hero-shot .hero-video .embed-responsive iframe {
-    height: 100vh;
-}
-
-.hero-shot .hero-shot #ytplayer {
-    pointer-events: none;
-    opacity: 0;
-}
-
-.hero-shot .container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    flex-direction: column;
-}
 .hero-shot .container .line-1{
     display: block;
     color: var(--primecolor-contrast);
@@ -182,6 +138,8 @@ header .navbar-container nav a {
     font-size: 30px;
     font-family: "Montserrat";
     letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 3%;
 }
 .hero-shot .container .line-2{
     display: block;
@@ -189,6 +147,7 @@ header .navbar-container nav a {
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 0.05em;
+    text-align: center;
 }
 
 
@@ -236,4 +195,219 @@ header .navbar-container nav a {
     text-transform: uppercase;
     font-size: 25px;
     transition: .3s;
+}
+
+
+/* SLIDER SECTION */
+
+.slider-section{
+    padding: 10% 0%;
+    background-color: var(--brand-secondary);
+}
+
+.slider-section .carousel-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-section .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider-section .carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-section .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+}
+
+.slider-section .prev-btn {
+    left: 0;
+}
+
+.slider-section .next-btn {
+    right: 0;
+}
+
+.slider-section .title h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.050em;
+    color: var(--primecolor-contrast);
+}
+
+.slider-section .title h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--brand-primary);
+    margin-top: 2%;
+}
+
+
+/* Welcome */
+.welcome {
+    padding: 10% 0%;
+    text-align: center;
+}
+.welcome .img-container img {
+    width: 100%;
+}
+
+.welcome .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.welcome h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.welcome h1::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--support-color);
+    margin-top: 2%;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--brand-primary);
+    padding: 10% 0%;
+}
+
+footer .logo{
+    text-align: center;
+}
+
+footer .logo img {
+    width: 50%;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+footer h3 {
+    color: var(--brand-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.050em;
+    font-size: 30px;
+    text-align: center;
+}
+
+footer .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container .social-media ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    background: var(--brand-secondary);
+    border-radius: 100%;
+    text-decoration: none;
+    transition: .3s;
+}
+
+footer .container .social-media ul li a:hover {
+    background-color: var(--support-color);
+}
+
+footer .container .social-media ul li a .fa-brands {
+    color: var(--primecolor-contrast);
+}
+
+footer .link {
+    text-align: center;
+}
+
+footer .link a{
+    color: var(--brand-secondary);
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    transition: .3s;
+    padding: 5px;
+    font-weight: 600;
+}
+
+footer .link a:hover {
+    color: var(--support-color);
+}
+
+
+/* DARK MODE */
+/* Estilos para el toggle de dark mode */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.dark-mode-toggle label {
+    display: block;
+    width: 50px;
+    height: 26px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dark-mode-toggle label::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked + label::before {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+
+/* Estilos adicionales para el modo oscuro */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
 }
