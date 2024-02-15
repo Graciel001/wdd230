@@ -21,7 +21,8 @@
 <body>
     <header>
         <div class="img-container">
-            <img src="images/gracielvelazquez.jpg" alt="Graciel Velazquez">
+            <source srcset="images/gracielvelazquez.webp" type="image/webp">
+            <img src="images/gracielvelazquez.webp" alt="Graciel Velazquez">
         </div>
         <h1>
             Graciel B. Velazquez
@@ -36,6 +37,14 @@
         <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=spa&id=p32#p32" target="_blank">Scripture</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/nigeria-temple-mobile.webp" media="(max-width: 550px)">
+                <source srcset="images/nigeria-temple.webp" media="(min-width: 551px)">
+                <img src="images/nigeria-temple.webp" alt="Nigeria Temple">
+            </picture>
+            <div class="overlay">Nigeria Temple</div>
+        </div>
         <div class="row">
             <h2 class="main-title">
                 WDD 230: Web Frontend Development
