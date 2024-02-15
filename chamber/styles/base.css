@@ -367,7 +367,6 @@ footer .link a:hover {
 
 
 /* DARK MODE */
-/* Estilos para el toggle de dark mode */
 .dark-mode-toggle {
     position: fixed;
     top: 20px;
@@ -406,7 +405,6 @@ footer .link a:hover {
     transform: translateX(-100%);
 }
 
-/* Estilos adicionales para el modo oscuro */
 body.dark-mode {
     background-color: #000;
     color: #fff;
