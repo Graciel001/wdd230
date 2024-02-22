@@ -1,13 +1,3 @@
-// Hamburger menu
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('nav');
-
-hamButton.addEventListener('click', () =>{
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
-
-
 //CAROUSEL
 
 let slideIndex = 0;
@@ -53,16 +43,3 @@ prevBtn.addEventListener('click', prevSlide);
 
 setInterval(showSlides, 4000); 
 
-
-// DARK MODE
-
-const darkModeToggle = document.getElementById('dark-mode-toggle-checkbox');
-const body = document.body;
-
-darkModeToggle.addEventListener('change', () => {
-    if (darkModeToggle.checked) {
-        body.classList.add('dark-mode');
-    } else {
-        body.classList.remove('dark-mode');
-    }
-});
