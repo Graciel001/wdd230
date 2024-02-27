@@ -108,10 +108,12 @@ nav a {
     text-decoration: none;
     color: var(--brand-secondary);
 }
-.map-container{
+.map-container {
     padding: 5% 3%;
+    margin: 5% auto;
     height: 270px;
 }
+
 .map-container iframe {
     width: 100%;
     height: 270px;
@@ -153,3 +155,10 @@ footer p {
     font-size: 2.5rem;
     font-weight: bold;
 }
+
+
+/* page visit ¨*/
+#page-visit {
+    margin-top: 10px;
+    font-weight: bold;
+}  
