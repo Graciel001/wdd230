@@ -54,82 +54,42 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="hero-shot">
-            <div class="container">
-                <span class="line-1">
-                    Sunshine Valley
-                </span>
-                <span class="line-2">
-                    Chamber of Commerce
-                </span>
-            </div>
-        </div>
-        <div class="dark-mode-toggle">
-            <input type="checkbox" id="dark-mode-toggle-checkbox">
-            <label for="dark-mode-toggle-checkbox"></label>
-        </div>
-        <div class="ctas">
-            <div class="container">
-                <div class="cta-1">
-                    <a href="#">
-                        <span>About Us</span>
-                        <img src="images/cta-1.png" loading="lazy" alt="About Us">
-                    </a>
-                </div>
-                <div class="cta-2">
-                    <a href="#">
-                        <span>Contact Us</span>
-                        <img src="images/cta-2.png" loading="lazy" alt="Contact Us">
-                    </a>
-                </div>
-                <div class="cta-3">
-                    <a href="#">
-                        <span>Discover</span>
-                        <img src="images/cta-3.png" loading="lazy" alt="Discover">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="slider-section">
-            <div class="container">
-                <div class="title">
-                    <h3>
-                        Adventure Awaits
-                    </h3>
-                </div>
-                <div class="carousel-container">
-                    <div class="carousel-slide">
-                        <img src="images/sunshine-valley-hero-slide-1-v2.webp" loading="lazy" alt="Slide 1">
-                        <img src="images/sunshine-valley-hero-slide-2-v2.webp" loading="lazy" alt="Slide 2">
-                        <img src="images/sunshine-valley-hero-slide-3-v2.webp" loading="lazy" alt="Slide 3">
-                        <img src="images/sunshine-valley-hero-slide-4-v2.webp" loading="lazy" alt="Slide 4">
-                    </div>
-                    <button class="prev-btn">&#10094;</button>
-                    <button class="next-btn">&#10095;</button>
-                </div>
-            </div>
-        </div>
-        <div class="welcome">
-            <div class="container">
-                <div class="img-container">
-                    <img src="images/welcome.webp" loading="lazy">
-                </div>
-                <div class="text">
-                    <h1>
-                        Welcome to Sunshine Valley
-                    </h1>
-                    <p>
-                        Where community thrives and opportunities abound! At Sunshine Valley Chamber of Commerce, we're dedicated to fostering growth, prosperity, and collaboration among businesses, residents, and visitors alike.
-                    </p>
-                    <p>
-                        Explore our vibrant community and discover a wealth of resources, from local businesses ready to serve your needs to exciting events that celebrate our unique culture. Whether you're a long-time resident, a new arrival, or just passing through, Sunshine Valley welcomes you with open arms.
-                    </p>
-                    <p>
-                        Join us in shaping the future of our valley, where every day brings new opportunities and adventures. Together, let's make Sunshine Valley a place where dreams flourish and connections flourish. Welcome home!
-                    </p>
-                </div>
-            </div>
+    <main>    
+        <div class="main-content">
+            <aside class="sidebar">
+                <h3>Membership Levels</h3>
+                <ul>
+                    <li><strong>NP Membership:</strong> For non-profit organizations, no fee.</li>
+                    <li><strong>Bronze Membership:</strong> Includes basic benefits.</li>
+                    <li><strong>Silver Membership:</strong> Includes additional benefits.</li>
+                    <li><strong>Gold Membership:</strong> Includes premium benefits.</li>
+                </ul>
+            </aside>    
+            <form action="thankyou.html" method="get">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="title">Title/Position:</label>
+                <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-]{7,}"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com"><br><br>
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="business">Business/Organization Name:</label>
+                <input type="text" id="business" name="business" required><br><br>
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership">
+                    <option value="NP Membership">NP Membership</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select><br><br>
+                <label for="description">Business Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+                <input type="hidden" id="date" name="date" value="">
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </main>
     <footer>
@@ -172,6 +132,7 @@
     <script src="scripts/carousel.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/hamburguerMenu.js"></script>
+    <script src="scripts/dateJoin.js"></script>
 </body>
 </html>
 
