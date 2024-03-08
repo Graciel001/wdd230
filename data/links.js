@@ -1,4 +1,4 @@
-const baseURL = "https://graciel001.github.io/wdd230/";
+const baseURL = "";
 
 const linksURL = "https://graciel001.github.io/wdd230/data/links.json";
 

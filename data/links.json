@@ -4,11 +4,11 @@
         "lesson": "01",
         "links": [
           {
-            "url": "/lesson02/design.html",
+            "url": "https://graciel001.github.io/wdd230/lesson02/design.html",
             "title": "Design"
           },
           {
-            "url": "/lesson02/design-principles.html",
+            "url": "https://graciel001.github.io/wdd230/lesson02/design-principles.html",
             "title": "Design Principles"
           }
         ]
