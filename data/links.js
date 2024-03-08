@@ -14,20 +14,23 @@ async function getLinks() {
 }
 
 function displayLinks(data) {
-  const lessons = data.lessons;
-
-  const ul = document.querySelector(".card ul");
-
-  lessons.forEach(lesson => {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-
-    a.href = baseURL + lesson.links[0].url;
-    a.textContent = lesson.lesson + ": " + lesson.links[0].title;
-
-    li.appendChild(a);
-    ul.appendChild(li);
-  });
-}
+    const lessons = data.lessons;
+  
+    const ul = document.querySelector(".card ul");
+  
+    lessons.forEach(lesson => {
+      lesson.links.forEach(link => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+  
+        a.href = baseURL + link.url;
+        a.textContent = lesson.lesson + ": " + link.title;
+  
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+    });
+  }
+  
 
 document.addEventListener("DOMContentLoaded", getLinks);
