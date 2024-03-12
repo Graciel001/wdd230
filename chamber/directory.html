@@ -54,42 +54,13 @@
             </div>
         </div>
     </header>
-    <main>    
-        <div class="main-content">
-            <aside class="sidebar">
-                <h3>Membership Levels</h3>
-                <ul>
-                    <li><strong>NP Membership:</strong> For non-profit organizations, no fee.</li>
-                    <li><strong>Bronze Membership:</strong> Includes basic benefits.</li>
-                    <li><strong>Silver Membership:</strong> Includes additional benefits.</li>
-                    <li><strong>Gold Membership:</strong> Includes premium benefits.</li>
-                </ul>
-            </aside>    
-            <form action="thankyou.html" method="get">
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname" required><br><br>
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname" required><br><br>
-                <label for="title">Title/Position:</label>
-                <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-]{7,}"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="example@example.com"><br><br>
-                <label for="phone">Mobile Phone:</label>
-                <input type="tel" id="phone" name="phone" required><br><br>
-                <label for="business">Business/Organization Name:</label>
-                <input type="text" id="business" name="business" required><br><br>
-                <label for="membership">Membership Level:</label>
-                <select id="membership" name="membership">
-                    <option value="NP Membership">NP Membership</option>
-                    <option value="Bronze Membership">Bronze Membership</option>
-                    <option value="Silver Membership">Silver Membership</option>
-                    <option value="Gold Membership">Gold Membership</option>
-                </select><br><br>
-                <label for="description">Business Description:</label><br>
-                <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
-                <input type="hidden" id="date" name="date" value="">
-                <button type="submit">Submit</button>
-            </form>
+    <main>
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <div id="members-container" class="grid-view">
+            <!-- Member cards or list items will be dynamically added here -->
         </div>
     </main>
     <footer>
@@ -132,7 +103,7 @@
     <script src="scripts/carousel.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/hamburguerMenu.js"></script>
-    <script src="scripts/dateJoin.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>
 

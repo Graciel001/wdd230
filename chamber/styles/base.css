@@ -545,3 +545,56 @@ main {
     padding: 20px;
 }
 
+
+
+
+/* DIRECTORY PAGE */
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.view-toggle {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr));
+    grid-gap: 20px;
+}
+
+.list-view .member {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.list-view .member img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.phone-link {
+    display: block;
+}
+
+#members-container img {
+    width: 100%;
+}
+
+.member{
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .grid-view #members-container {
+        grid-template-columns: 1fr;
+    }
+}

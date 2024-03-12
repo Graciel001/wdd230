@@ -1,0 +1,53 @@
+{
+    "members": [
+        {
+            "name": "John Doe",
+            "image": "images/coming-soon.webp",
+            "role": "General Manager",
+            "phone": "555-123-4567",
+            "email": "john.doe@gmail.com"
+        },
+        {
+            "name": "Jane Smith",
+            "image": "images/coming-soon.webp",
+            "role": "Director of Services",
+            "phone": "555-234-5678",
+            "email": "jane.smith@gmail.com"
+        },
+        {
+            "name": "Michael Johnson",
+            "image": "images/coming-soon.webp",
+            "role": "Marketing Manager",
+            "phone": "555-345-6789",
+            "email": "michael.johnson@gmail.com"
+        },
+        {
+            "name": "Emily Williams",
+            "image": "images/coming-soon.webp",
+            "role": "Customer Relations Specialist",
+            "phone": "555-456-7890",
+            "email": "emily.williams@gmail.com"
+        },
+        {
+            "name": "David Brown",
+            "image": "images/coming-soon.webp",
+            "role": "Sales Representative",
+            "phone": "555-567-8901",
+            "email": "david.brown@gmail.com"
+        },
+        {
+            "name": "Sarah Davis",
+            "image": "images/coming-soon.webp",
+            "role": "Accountant",
+            "phone": "555-678-9012",
+            "email": "sarah.davis@gmail.com"
+        },
+        {
+            "name": "Alex Wilson",
+            "image": "images/coming-soon.webp",
+            "role": "IT Manager",
+            "phone": "555-789-0123",
+            "email": "alex.wilson@gmail.com"
+        }
+    ]
+}
