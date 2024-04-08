@@ -1,0 +1,43 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oswald";
+}
+p,a,span,li{
+    font-family: "Open Sans";
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+h2,h3,h4,h5{
+    font-size: 35px;
+}
+p {
+    font-size: 25px;
+}
+.box-color{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
+    background-color: #FFD700;
+}
+.flex-paragraph{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.primary-color{
+    background-color: #0150EB;
+}
+.secondary-color{
+    background-color: #CD2027;
+}
+
+.contrast-color{
+    background-color: #fff;
+}
+
+.second-contrast-color{
+    background-color: #1E1E1E;
+}
