@@ -155,6 +155,13 @@ nav.open{
     display: grid!important;
 }
 
+.hero-shot{
+    padding: 10% 0%;
+    background-image: url("images/main/hero-shot.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .hero-shot .title span {
     display: block;

@@ -2,4 +2,7 @@
     .container{
         width: 750px;
     }
+    .hero-shot {
+        padding: 5% 0;
+    }
 }
