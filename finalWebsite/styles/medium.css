@@ -1,8 +1,53 @@
 @media screen and (min-width: 768px){
+    header .logo {
+        width: 50%;
+        margin: 30px auto;
+    }
+    header .navbar-container {
+        width: 100%;;
+    }
+    .mobile-menu {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex!important;
+    }
+    #menu{
+        display: none;
+    }
     .container{
         width: 750px;
     }
     .hero-shot {
+        padding: 10% 0;
+    }
+    .hero-shot .title .line-1,.hero-shot .title .line-3 {
+        font-size: 40px;
+    }
+    .hero-shot .title .line-2 {
+        font-size: 85px;
+    }
+    .ctas {
+        padding: 5% 0;
+    }
+    .ctas .container{
+        flex-direction: row;
+    }
+    .welcome {
+        padding: 5% 0;
+    }
+    .welcome h1 {
+        font-size: 60px;
+    }
+    .welcome h3 {
+        font-size: 45px;
+    }
+
+    footer .container{
+        flex-direction: row;
+    }
+    footer {
         padding: 5% 0;
     }
 }

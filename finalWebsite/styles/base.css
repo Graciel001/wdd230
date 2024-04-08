@@ -156,8 +156,8 @@ nav.open{
 }
 
 .hero-shot{
-    padding: 10% 0%;
-    background-image: url("images/main/hero-shot.png");
+    padding: 20% 0%;
+    background-image: url("../images/main/hero-shot.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -166,4 +166,139 @@ nav.open{
 .hero-shot .title span {
     display: block;
     text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.hero-shot .title .line-1,.hero-shot .title .line-3 {
+    font-size: 20px;
+}
+
+.hero-shot .title .line-2 {
+    font-size: 30px;
+    font-family: "Oswald";
+}
+
+.ctas {
+    padding: 10% 0;
+    background: var(--support-color);
+}
+
+.ctas .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.ctas .cta-container{
+    margin: 0 30px;
+}
+
+.ctas .cta-container img {
+    width: 100%;
+    transition: .3s;
+}
+
+.ctas .cta-container span {
+    color: var(--primecolor-contrast);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    transition: .3s;
+}
+
+.ctas .cta-container a{
+    text-decoration: none;
+}
+
+.ctas .cta-container a:hover span {
+    color: var(--brand-secondary);
+}
+
+.ctas .cta-container a:hover img {
+    filter: brightness(.50);
+}
+
+.welcome {
+    padding: 10% 0%;
+    background-image: url("../images/main/welcome.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.welcome h1 {
+    color: var(--primecolor-contrast);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.welcome h3 {
+    color: var(--primecolor-contrast);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.welcome p {
+    color: var(--primecolor-contrast);
+    font-size: 18px;
+}
+
+.welcome .container {
+    background: #000000a6;
+    padding: 5%;
+}
+
+
+footer {
+    padding: 10% 0%;
+    background-color: var(--support-color);
+    text-align: center;
+}
+
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer h3 {
+    color: var(--primecolor-contrast);
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+footer .phone {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: var(--primecolor-contrast);
+    font-size: 16px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: var(--brand-secondary);
+}
+
+
+footer .hours ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+footer .hours ul li {
+    color: var(--primecolor-contrast);
+    font-size: 16px;
+    margin-bottom: 10px;
 }

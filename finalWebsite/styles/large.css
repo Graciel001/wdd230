@@ -1,22 +1,4 @@
-@media screen and (min-width: 768px){
-    header .logo {
-        width: 50%;
-        margin: 30px auto;
-    }
-    header .navbar-container {
-        width: 100%;;
-    }
-    .mobile-menu {
-        display: none;
-    }
 
-    .desktop-nav {
-        display: flex!important;
-    }
-    #menu{
-        display: none;
-    }
-}
 @media screen and (min-width: 992px){
     .container{
         width: 902px;
@@ -36,6 +18,9 @@
     }
     header .navbar-container {
         width: 70%;;
+    }
+    footer .container {
+        justify-content: space-between;
     }
 }
 @media screen and (min-width: 1530px){
