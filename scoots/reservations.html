@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~ - Reservations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reservations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="reservation-form">
+            <h2>Make a Reservation</h2>
+            <form>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                
+                <label for="period">Rental Period:</label>
+                <select id="period" name="period" required>
+                    <option value="half-day">Half Day (3 hours)</option>
+                    <option value="full-day">Full Day</option>
+                </select><br><br>
+                
+                <label for="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type" required>
+                    <option value="Honda Metropolitan">Honda Metropolitan</option>
+                    <option value="Honda Dio">Honda Dio</option>
+                    <option value="Honda PCX150">Honda PCX150</option>
+                    <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                    <option value="Jeep Wrangler - 4 door with A/C">Jeep Wrangler - 4 door with A/C</option>
+                    <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                </select><br><br>
+                
+                <label for="number">Number of Rentals:</label>
+                <input type="number" id="number" name="number" min="1" required><br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="state-country">Home State or Country:</label>
+                <input type="text" id="state-country" name="state-country" required><br><br>
+                
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line"><br><br>
+                
+                <label for="accommodations">Special Accommodations/Comments:</label><br>
+                <textarea id="accommodations" name="accommodations"></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ~Scoots~</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
